@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif, "Gowun Dodum", sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+ul li {
+  font-family: "IBM Plex Sans KR", sans-serif;
+  text-align: center;
+  background-color: white;
+  margin: 10px;
+}
+
+#log {
+  margin-top: 30px;
+}
+
+#logout {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+#todo-list {
+  display: inline-block;
+  font-weight: 40px;
+}
+input {
+  background-color: transparent;
+  font-size: 30px;
+  border-width: 0 0 1px;
+  margin-top: 20px;
+}
+input:focus {
+  outline: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+#clock {
+  font-family: "Abril Fatface", serif;
+  font-size: 120px;
+  font-weight: lighter;
+  color: white;
+  margin: 50px;
+}
+
+#greeting {
+  font-size: 70px;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: rgb(168, 219, 243);
+  text-align: center;
+  border-radius: 20px;
+}
+button:active {
+  background-color: rgb(203, 221, 236);
+}
+
+button:hover {
+  color: tomato;
+}
