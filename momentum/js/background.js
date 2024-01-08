@@ -4,6 +4,6 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 const bgImage = document.createElement("img");
 
-bgImage.src = `momentum/img/${chosenImage}`;
+bgImage.src = `/momentum/img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
