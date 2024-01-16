@@ -1,14 +1,14 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Playfair Display", serif, "Gowun Dodum", sans-serif;
   text-align: center;
+  overflow: hidden;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
@@ -20,69 +20,315 @@ img {
   z-index: -1;
   object-fit: cover;
 }
+
 ul li {
-  font-family: "IBM Plex Sans KR", sans-serif;
   text-align: center;
   background-color: white;
   margin: 10px;
 }
 
-#log {
-  margin-top: 30px;
+button {
+  border: none;
+  background-color: transparent;
 }
 
-#logout {
-  font-size: 20px;
-  margin-left: 50px;
-}
-
-#todo-list {
-  display: inline-block;
-  font-weight: 40px;
-}
 input {
+  caret-color: rgb(255, 255, 255);
   background-color: transparent;
   font-size: 30px;
   border-width: 0 0 1px;
-  margin-top: 20px;
+  margin-top: 0px;
+  color: rgb(255, 255, 255);
+}
+input::placeholder {
+  color: white;
 }
 input:focus {
   outline: none;
 }
 
 li {
+  font-family: "Gowun Dodum", sans-serif;
   list-style-type: none;
+  width: 400px;
 }
 
-#clock {
-  font-family: "Abril Fatface", serif;
-  font-size: 120px;
-  font-weight: lighter;
-  color: white;
-  margin: 50px;
-}
-
-#greeting {
-  font-size: 70px;
+span {
   display: inline-block;
-  margin-left: 20px;
+  font-family: "Gowun Dodum", sans-serif;
+  text-align: left;
 }
 
 .hidden {
   display: none;
 }
 
-button {
+/* 명언 */
+#quote {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 300px;
+  height: 130px;
+}
+
+#quote span:nth-child(2) {
+  color: rgb(67, 50, 145);
+}
+
+/* 날씨 */
+#weather {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#weather span:nth-child(3) {
+  display: block;
+  color: rgb(67, 50, 145);
+  font-size: 23px;
+  margin-top: 2px;
+  margin-left: 15px;
+}
+
+/* 시계 */
+#clock {
+  font-family: "Abril Fatface", serif;
+  font-size: 190px;
+  font-weight: lighter;
+  color: white;
+  margin-top: -70px;
+  top: 20px;
+}
+
+/* 날짜 */
+#date {
+  font-family: "Abril Fatface", serif;
+  font-weight: lighter;
+  font-size: 35px;
+  color: rgb(232, 232, 255);
+  border-radius: 10px;
+  margin-top: -30px;
+  margin-right: 20px;
+}
+
+/* 사용자 이름 입력란 */
+#inputname {
+  display: inline-block;
+  width: 350px;
+  height: 80px;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-size: 40px;
+  color: white;
+}
+
+/* 로그인 버튼 역할 */
+#login {
+  background-color: rgba(152, 206, 223, 0.822);
+  border-radius: 15px;
+  border: none;
+  font-size: 23px;
+  padding: 6px;
+  margin-left: 40px;
+  position: relative;
+  top: 6px;
+}
+
+/* 로그인 하라는 안내 문구 */
+#pleaselogin {
+  display: inline-block;
+  color: rgb(49, 49, 49);
+  background-color: rgba(34, 123, 150, 0.719);
+  width: 200px;
+  height: 28px;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* 인사 이모지 */
+#hello {
+  font-size: 20px;
+  margin-top: -30px;
+  margin-left: 130px;
+}
+/* 안내 문구 애니메이션 */
+.antimation1 {
+  animation-name: blinking;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinking {
+  0% {
+    background-color: rgba(174, 215, 226, 0.719);
+  }
+  50% {
+    background-color: rgba(145, 200, 216, 0.719);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0.719);
+    color: rgba(87, 80, 80, 0.801);
+  }
+}
+
+/* 이모지 애니메이션 */
+.antimation2 {
+  animation-name: blinking2;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes blinking2 {
+  0% {
+  }
+  100% {
+    font-size: 30px;
+    margin-top: -40px;
+  }
+}
+
+/* 아침 인사 */
+#greeting {
+  font-size: 50px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: -12px;
+  color: rgb(255, 255, 255);
+}
+
+/* 삭제 버튼 */
+.delete {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+
+/* 체크 버튼 */
+.check {
+  background-color: rgb(255, 255, 255);
+  width: 19px;
+  height: 18px;
+  font-size: 14px;
+  float: left;
+  margin-top: 6px;
+  margin-left: 20px;
+  border-radius: 2px;
+  color: rgb(161, 178, 180);
+}
+
+/* todolist 영역 */
+#todo-container,
+#nottodo-container {
+  display: inline-block;
+  font-weight: 40px;
+  overflow: scroll;
+  height: 222px;
+}
+
+#todo-container::-webkit-scrollbar,
+#nottodo-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+#todo-container::-webkit-scrollbar-thumb,
+#nottodo-container::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #a7b5f1da;
+  border-radius: 10px;
+}
+
+#todo-container::-webkit-scrollbar-track,
+#nottodo-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+#todo-container::-webkit-scrollbar-corner,
+#nottodo-container::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 로그인/로그아웃 */
+#login:focus,
+#logout:hover {
+  color: aquamarine;
+}
+
+#logout {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+  left: 10px;
   border: none;
   color: white;
-  background-color: rgb(168, 219, 243);
+  background-color: rgba(152, 206, 223, 0.822);
   text-align: center;
   border-radius: 20px;
 }
-button:active {
+
+#logout:active {
   background-color: rgb(203, 221, 236);
 }
 
-button:hover {
-  color: tomato;
+/* cheerup 문구 */
+#cheerup {
+  background: linear-gradient(#ffaaaa, #bcc1fc);
+  text-align: center;
+  border-radius: 15px;
+  width: 200px;
+  margin: 5px auto;
+}
+
+/* Todolist */
+.alltodolist {
+  background-color: rgba(255, 255, 255, 0.56);
+  border-radius: 10px;
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#alltodo {
+  display: flex;
+  justify-content: space-around;
+}
+
+#alltodo span:nth-child(3) {
+  width: 200px;
+  height: 30px;
+}
+
+#todolist,
+#nottodolist {
+  flex: 1;
+  max-width: 350px;
+  height: 250px;
+}
+
+#todolist {
+  margin-left: 100px;
+}
+
+#nottodolist {
+  margin-right: 100px;
+}
+
+#todo,
+#nottodo {
+  width: 200px;
+}
+
+/* 투두 기록 시간 */
+#spantime {
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: -7px;
+  display: flex;
+  width: 150px;
+  height: 20px;
 }
