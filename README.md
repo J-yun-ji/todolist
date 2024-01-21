@@ -24,7 +24,7 @@
 
 <h3 align="center">✅ Todo & NotTodo List ☑️</h3>
 <p align="center">
-  <strong>해야 할 일과 하지 말아야 할 목록을 써보아요!</strong>
+  <strong>해야 할 일과 하지 말아야 할 일 목록을 써보아요!</strong>
 <br><br>
 <img width="500" alt="Todolist" src="https://github.com/J-yun-ji/todolist/assets/66745172/c6739bac-2526-4e81-b5be-62a74e12d15b">
 
@@ -39,7 +39,7 @@
 
 **NotTodo (하지 말아야 할 목록) 🙅🏻‍♀️**
 >* Todo와 달리 오히려 **해서는 안 되는 일**들을 나열하고 **관리**해요!
->* 자신에게 **해로운 습관**이나 불필요한 작업dp **시간**과 **에너지**를 **낭비하지 않도록** 도와줘요!
+>* 자신에게 **해로운 습관**이나 불필요한 작업에 **시간**과 **에너지**를 **낭비하지 않도록** 도와줘요!
 
 <br>
 <br>
